@@ -1,0 +1,11 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    border: 10px solid black;
+}
+
+header #Universidade{
+    padding-left: 75px;
+}
