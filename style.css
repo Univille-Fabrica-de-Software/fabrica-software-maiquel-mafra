@@ -1,0 +1,23 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 72px;
+
+}
+
+.section {
+    padding: 72px 0;
+}
+
+.logo {
+    width: 140px;
+    height: auto;
+}
+
+.hero-section {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+}
