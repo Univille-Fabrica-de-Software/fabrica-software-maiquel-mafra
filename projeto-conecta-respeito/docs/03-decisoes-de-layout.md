@@ -1,71 +1,19 @@
-# Decisões de Layout
+# 03. Decisões de Layout e Design
 
-## Introdução
+## 1. Identidade Visual e Paleta de Cores
+- **Verde Principal (`#198754` / `bg-success`):** Transmite tranquilidade, segurança, acolhimento e respeito, mantendo identidade harmônica.
+- **Fundo Claro (`#f8f9fa` / `bg-light`):** Alternado entre as seções para criar contraste visual sutil e facilitar a escaneabilidade.
+- **Cinza Escuro / Preto (`#212529` / `bg-dark`):** Utilizado no rodapé para demarcar o encerramento do conteúdo com sobriedade.
 
-Este documento registra as principais decisões de layout adotadas no desenvolvimento da landing page "Panorama do Mercado Tech".
+## 2. Tipografia e Hierarquia
+- Uso da pilha de fontes padrão de sistema (`system-ui, -apple-system, sans-serif`) para rápido carregamento e alta legibilidade.
+- Um único título principal `<h1>` na seção Hero, seguido de `<h2>` em cada seção e `<h3>` nos títulos de cards informativos.
 
-O objetivo é justificar escolhas visuais, estruturais e técnicas aplicadas na interface.
+## 3. Grid e Componentes
+- Utilização do sistema de Grid do Bootstrap (`container`, `row`, `col-md-*`) para reorganizar os cards horizontalmente no desktop e empilhá-los verticalmente no mobile.
+- Utilização de `cards` para agrupar informações de forma modular e limpa.
+- Barra de navegação fixa no topo (`fixed-top`) com compensação de `padding-top` no `body` para navegação contínua.
 
-## Organização visual
-
-A página foi organizada no formato de landing page, com seções verticais e navegação por âncoras.
-
-Essa escolha facilita a leitura sequencial do conteúdo e permite que o usuário compreenda rapidamente:
-
-- o objetivo da pesquisa;
-- os dados analisados;
-- as vagas locais e nacionais;
-- as tecnologias observadas;
-- as competências valorizadas;
-- a análise final.
-
-## Uso de Bootstrap
-
-O Bootstrap foi utilizado para acelerar a construção da interface e garantir uma base responsiva.
-
-Foram utilizados recursos como:
-
-- `container`;
-- `row`;
-- `col`;
-- `navbar`;
-- `card`;
-- `badge`;
-- `button`;
-- `progress`;
-- classes de espaçamento;
-- classes de alinhamento;
-- classes de responsividade.
-
-A escolha pelo Bootstrap permite concentrar a atividade em estruturação, organização e documentação, reduzindo o tempo necessário para criação manual de todos os estilos CSS.
-
-## Estrutura por seções
-
-O conteúdo foi dividido em seções com a tag `section`.
-
-Cada seção possui uma responsabilidade específica:
-
-| Seção        | Finalidade                                         |
-| ------------ | -------------------------------------------------- |
-| Header       | Exibir logo e menu de navegação                    |
-| Hero         | Apresentar o tema principal da página              |
-| Pesquisa     | Explicar o levantamento realizado                  |
-| Vagas        | Apresentar vagas locais e nacionais                |
-| Tecnologias  | Exibir tecnologias mais citadas                    |
-| Competências | Apresentar competências técnicas e comportamentais |
-| Análise      | Sintetizar as exigências do mercado                |
-| Footer       | Exibir informações finais da atividade             |
-
-Essa divisão melhora a organização do código e facilita futuras manutenções.
-
-## Cabeçalho
-
-O cabeçalho utiliza uma `navbar` fixa no topo da página.
-
-A decisão de usar menu fixo foi adotada para facilitar a navegação entre as seções, especialmente em páginas mais longas.
-
-A logo do projeto foi carregada a partir do caminho:
-
-```text
-assets/images/logo.png
-```
+### 4. Recursos Visuais e Direitos Autorais
+- **Banco de Imagens:** Todas as fotografias utilizadas nas seções informativas foram obtidas na plataforma **Pexels**.
+- **Termos de Licença:** Os ativos visuais estão sob a Licença Pexels (uso livre e gratuito sem exigência de compensação financeira ou restrições de direitos autorais para fins didáticos/educacionais).

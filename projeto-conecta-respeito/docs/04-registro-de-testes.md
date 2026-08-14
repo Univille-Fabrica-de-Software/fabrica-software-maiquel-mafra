@@ -1,112 +1,63 @@
+# 04. Registro de Testes do Sistema
+
+## 1. Visão Geral
+Este documento registra a bateria de testes manuais e automatizados executados na landing page **Conecta Respeito**, validando sua responsividade, navegabilidade, acessibilidade e conformidade técnica antes da entrega final.
+
 ---
 
-# `docs/04-registro-de-testes.md`
+## 2. Testes Automatizados via Google Lighthouse
+A avaliação automatizada foi realizada através da ferramenta nativa **Google Lighthouse** (DevTools), simulando os ambientes Mobile e Desktop.
 
-````markdown
-# Registro de Testes
+### Resultados Obtidos:
+| Dispositivo / Ambiente | Desempenho (Performance) | Acessibilidade | Melhores Práticas | SEO |
+| :--- | :---: | :---: | :---: | :---: |
+| **Mobile** | 63 | 90 | 100 | 100 |
+| **Desktop** | 75 | 90 | 100 | 100 |
 
-## Introdução
+### Evidências Visuais dos Testes:
 
-Este documento registra os testes manuais realizados na landing page "Panorama do Mercado Tech".
+#### Evidência de Teste - Mobile
+![Relatório de Teste Lighthouse Mobile](image.png)
 
-O objetivo é verificar se a página abre corretamente, se os recursos visuais são carregados, se a navegação funciona e se o layout responde adequadamente em diferentes tamanhos de tela.
+#### Evidência de Teste - Desktop
+![Relatório de Teste Lighthouse Desktop](image-1.png)
 
-## Ambiente de teste
+### Análise dos Indicadores:
+- **SEO (100/100):** Metadados descritivos, hierarquia estruturada de cabeçalhos (`h1`, `h2`, `h3`) e tags semânticas devidamente validadas.
+- **Melhores Práticas (100/100):** Uso correto de doctype HTML5, codificação UTF-8 e carregamento seguro de recursos externos.
+- **Acessibilidade (90/100):** Textos alternativos (`alt`) presentes nas imagens e contraste de leitura aprovado.
+- **Desempenho (63 Mobile / 75 Desktop):** Pontuação influenciada pelo carregamento em resolução nativa das imagens fotográficas no ambiente local.
 
-Preencha as informações abaixo conforme o ambiente utilizado.
+---
 
-| Item                   | Informação                                        |
-| ---------------------- | ------------------------------------------------- |
-| Sistema operacional    | macOS / Windows / Linux                           |
-| Navegador utilizado    | Google Chrome / Microsoft Edge / Firefox / Safari |
-| Editor de código       | VS Code                                           |
-| Forma de execução      | Arquivo local / Live Server / GitHub Pages        |
-| Data do teste          | Informar data                                     |
-| Responsável pelo teste | Nome do acadêmico                                 |
+## 3. Testes Manuais de Responsividade
+Validação da adaptação visual em diferentes viewports através da emulação de dispositivos móveis do navegador:
 
-## Teste 1 - Abertura da página
+| Cenário de Teste | Resolução / Dispositivo | Comportamento Esperado | Resultado |
+| :--- | :---: | :--- | :---: |
+| **Desktop Amplo** | 1920x1080 / 1366x768 | Menu horizontal expandido, grid em colunas lado a lado e imagens bem dimensionadas. | **Aprovado** |
+| **Tablet** | 768px (iPad) | Reorganização do grid para 2 colunas e ajuste suave dos espaçamentos. | **Aprovado** |
+| **Mobile** | 375px a 414px (Smartphones) | Menu hambúrguer retrátil funcional, cards empilhados em 1 coluna e sem barra de rolagem lateral. | **Aprovado** |
 
-| Verificação                   | Resultado esperado                                      | Status   |
-| ----------------------------- | ------------------------------------------------------- | -------- |
-| Abrir o arquivo `index.html`  | A página deve abrir no navegador sem erro               | Pendente |
-| Carregar o título da aba      | A aba deve exibir "Panorama do Mercado Tech"            | Pendente |
-| Carregar o conteúdo principal | O título e a descrição inicial devem aparecer           | Pendente |
-| Carregar o Bootstrap          | Layout deve aparecer organizado em grid, cards e navbar | Pendente |
-| Carregar o CSS próprio        | Ajustes de espaçamento, logo e efeitos devem funcionar  | Pendente |
+---
 
-## Teste 2 - Logo e favicon
+## 4. Testes Funcionais e de Navegação
+Verificação dos elementos interativos da interface:
 
-| Verificação                         | Resultado esperado                                        | Status   |
-| ----------------------------------- | --------------------------------------------------------- | -------- |
-| Exibir a logo no cabeçalho          | A imagem `logo.png` deve aparecer na navbar               | Pendente |
-| Verificar texto alternativo da logo | A imagem deve possuir atributo `alt`                      | Pendente |
-| Exibir favicon na aba               | O ícone deve aparecer na aba do navegador                 | Pendente |
-| Conferir caminhos dos ícones        | Os caminhos devem apontar para `assets/icons/favicon_io/` | Pendente |
+| Elemento Testado | Ação Realizada | Resultado Esperado | Status |
+| :--- | :--- | :--- | :---: |
+| **Links da Barra de Navegação** | Clique nos itens do menu superior | Rolagem suave (`smooth scroll`) até a âncora correspondente (`#inicio`, `#oquee`, `#tipos`, `#sinais`, `#apoio`). | **Aprovado** |
+| **Botão CTA (Hero Section)** | Clique no botão "Saiba Mais" | Redirecionamento direto para a seção explicativa inicial. | **Aprovado** |
+| **Menu Hambúrguer (Mobile)** | Clique no botão sanfona | Abertura e fechamento corretos da lista de navegação via Bootstrap JS. | **Aprovado** |
 
-## Teste 3 - Navegação interna
+---
 
-| Link do menu | Destino esperado                                      | Status   |
-| ------------ | ----------------------------------------------------- | -------- |
-| Início       | Deve navegar para a seção inicial                     | Pendente |
-| Pesquisa     | Deve navegar para a seção de apresentação da pesquisa | Pendente |
-| Vagas        | Deve navegar para a seção de vagas analisadas         | Pendente |
-| Tecnologias  | Deve navegar para a seção de tecnologias mais citadas | Pendente |
-| Competências | Deve navegar para a seção de competências observadas  | Pendente |
-| Análise      | Deve navegar para a seção de análise final            | Pendente |
+## 5. Testes de Acessibilidade e Inclusão
+- **Leitores de Tela:** Todas as imagens (`friendship_illustration.jpg`, `cyberbullying_illustration.jpg`, `sad_student_sitting_alone.jpg`, `counseling_illustration.jpg`) e o logotipo possuem o atributo `alt` com descrições objetivas e contextuais.
+- **Navegação por Teclado:** Utilização da tecla `Tab` confirmou foco visível e sequencial em todos os links e botões navegáveis.
+- **Contraste de Cores:** Combinações de texto e fundo auditadas para garantir legibilidade adequada.
 
-## Teste 4 - Conteúdo obrigatório
+---
 
-| Conteúdo                 | Resultado esperado                                      | Status   |
-| ------------------------ | ------------------------------------------------------- | -------- |
-| Cabeçalho                | Deve conter logo e menu                                 | Pendente |
-| Apresentação inicial     | Deve conter título, descrição e botão                   | Pendente |
-| Apresentação da pesquisa | Deve explicar o levantamento realizado                  | Pendente |
-| Vagas locais             | Deve apresentar 4 vagas locais                          | Pendente |
-| Vagas nacionais          | Deve apresentar 4 vagas nacionais                       | Pendente |
-| Tecnologias              | Deve listar tecnologias citadas nas vagas               | Pendente |
-| Competências             | Deve apresentar competências técnicas e comportamentais | Pendente |
-| Análise final            | Deve responder o que o mercado exige                    | Pendente |
-| Rodapé                   | Deve apresentar disciplina, acadêmico e ano             | Pendente |
-
-## Teste 5 - Responsividade
-
-| Dispositivo/tamanho | Resultado esperado                                       | Status   |
-| ------------------- | -------------------------------------------------------- | -------- |
-| Desktop             | Layout deve aparecer em colunas quando aplicável         | Pendente |
-| Notebook            | Conteúdo deve permanecer legível e organizado            | Pendente |
-| Tablet              | Cards e colunas devem se adaptar ao tamanho da tela      | Pendente |
-| Celular             | Conteúdo deve aparecer em coluna única quando necessário | Pendente |
-| Menu mobile         | Navbar deve exibir botão de menu recolhido               | Pendente |
-
-## Teste 6 - Acessibilidade básica
-
-| Verificação           | Resultado esperado                                      | Status   |
-| --------------------- | ------------------------------------------------------- | -------- |
-| Idioma da página      | A tag `html` deve conter `lang="pt-BR"`                 | Pendente |
-| Hierarquia de títulos | Deve existir um `h1` principal e subtítulos organizados | Pendente |
-| Texto alternativo     | Imagens devem possuir atributo `alt`                    | Pendente |
-| Links compreensíveis  | Links devem indicar claramente seu destino              | Pendente |
-| Navegação por teclado | Menu e links devem ser acessíveis com teclado           | Pendente |
-| Contraste visual      | Textos devem ser legíveis sobre o fundo                 | Pendente |
-
-## Teste 7 - Publicação no GitHub Pages
-
-| Verificação                        | Resultado esperado                                      | Status   |
-| ---------------------------------- | ------------------------------------------------------- | -------- |
-| Repositório criado                 | Projeto deve estar disponível no GitHub                 | Pendente |
-| GitHub Pages configurado           | Página deve estar publicada pela branch principal       | Pendente |
-| Página publicada abre corretamente | URL pública deve abrir a landing page                   | Pendente |
-| Arquivos estáticos carregam        | CSS, logo e favicon devem funcionar na versão publicada | Pendente |
-| Links internos funcionam           | Menu deve navegar corretamente na versão publicada      | Pendente |
-
-## Problemas encontrados
-
-Registre abaixo os problemas identificados durante os testes.
-
-```text
-Exemplo:
-O favicon não apareceu na aba do navegador.
-Causa provável: caminho incorreto no atributo href.
-Correção: ajuste do caminho para assets/icons/favicon_io/favicon-32x32.png.
-```
-````
+## 6. Conclusão dos Testes
+A interface atende satisfatoriamente aos requisitos funcionais e não funcionais estabelecidos, apresentando estabilidade estrutural, facilidade de navegação e notas sólidas de conformidade técnica.
