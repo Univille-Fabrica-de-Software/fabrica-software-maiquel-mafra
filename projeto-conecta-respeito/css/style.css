@@ -1,0 +1,16 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 60px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.section-padding {
+  padding: 50px 0;
+}
