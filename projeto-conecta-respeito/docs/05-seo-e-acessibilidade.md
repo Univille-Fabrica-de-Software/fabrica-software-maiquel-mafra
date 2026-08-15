@@ -29,6 +29,7 @@ O SEO (Search Engine Optimization) consiste em um conjunto de técnicas estrutur
 Para adequar a página aos padrões, foram aplicados os atributos `lang="pt-BR"` na tag raiz e configuradas as metatags de `description` e `viewport` no `<head>`. Como proposta de evolução contínua (visto que o Lighthouse retornou Desempenho Mobile 63), sugere-se a compressão em lote dos arquivos armazenados na pasta `assets/images/` para garantir carregamento instantâneo em redes 3G.
 
 ## 6 Evidências
+
 Abaixo estão os resultados automatizados da ferramenta Google Lighthouse aferidos sobre a Landing Page:
 
 | Dispositivo | Desempenho (Performance) | Acessibilidade | Melhores Práticas | SEO |
@@ -36,11 +37,23 @@ Abaixo estão os resultados automatizados da ferramenta Google Lighthouse aferid
 | **Mobile** | 63 | 90 | 100 | 100 |
 | **Desktop** | 75 | 90 | 100 | 100 |
 
-**Relatórios Visuais (Lighthouse):**
-![Evidência de Teste Mobile](image.png)
-![Evidência de Teste Desktop](image-1.png)
+### Relatórios Visuais (Lighthouse)
 
-**Checklist Mínimo de Verificação:**
+**Evidência Mobile:**
+<br>
+
+![Evidência de Teste Mobile](../image.png)
+
+<br>
+
+**Evidência Desktop:**
+<br>
+
+![Evidência de Teste Desktop](../image-1.png)
+
+<br>
+
+### Checklist Mínimo de Verificação
 - [x] Idioma definido corretamente no HTML
 - [x] Título da página
 - [x] Meta description
