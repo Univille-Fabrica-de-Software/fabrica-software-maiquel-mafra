@@ -40,18 +40,12 @@ Abaixo estão os resultados automatizados da ferramenta Google Lighthouse aferid
 ### Relatórios Visuais (Lighthouse)
 
 **Evidência Mobile:**
-<br>
 
 ![Evidência de Teste Mobile](../image.png)
 
-<br>
-
 **Evidência Desktop:**
-<br>
 
 ![Evidência de Teste Desktop](../image-1.png)
-
-<br>
 
 ### Checklist Mínimo de Verificação
 - [x] Idioma definido corretamente no HTML
