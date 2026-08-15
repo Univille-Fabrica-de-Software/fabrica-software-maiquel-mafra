@@ -6,10 +6,9 @@ Projeto desenvolvido como prática autoral na disciplina de **Fábrica de Softwa
 
 ## Acesso ao Projeto
 
-- **Repositório:** `https://github.com/Univille-Fabrica-de-Software/fabrica-software-maiquel-mafra/tree/main/     projeto-conecta-respeito`
+- **Repositório:** [Acessar Repositório no GitHub](https://github.com/Univille-Fabrica-de-Software/fabrica-software-maiquel-mafra/tree/main/projeto-conecta-respeito)
 
-- **Site Online:** `https://univille-fabrica-de-software.github.io/fabrica-software-maiquel-mafra/projeto-conecta-respeito/`
-
+- **Site Online:** [Acessar Conecta Respeito no GitHub Pages](https://univille-fabrica-de-software.github.io/fabrica-software-maiquel-mafra/projeto-conecta-respeito/)
 ---
 
 ## Como Executar Localmente
