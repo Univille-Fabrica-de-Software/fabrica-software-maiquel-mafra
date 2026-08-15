@@ -41,11 +41,11 @@ Abaixo estão os resultados automatizados da ferramenta Google Lighthouse aferid
 
 **Evidência Mobile:**
 
-![Evidência de Teste Mobile](../image.png)
+![Evidência de Teste Mobile](image.png)
 
 **Evidência Desktop:**
 
-![Evidência de Teste Desktop](../image-1.png)
+![Evidência de Teste Desktop](image-1.png)
 
 ### Checklist Mínimo de Verificação
 - [x] Idioma definido corretamente no HTML
