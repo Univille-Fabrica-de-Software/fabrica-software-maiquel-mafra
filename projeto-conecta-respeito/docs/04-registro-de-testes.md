@@ -17,10 +17,10 @@ A avaliação automatizada foi realizada através da ferramenta nativa **Google 
 ### Evidências Visuais dos Testes:
 
 #### Evidência de Teste - Mobile
-![Relatório de Teste Lighthouse Mobile](image.png)
+![Relatório de Teste Lighthouse Mobile](../assets/images/evidencias/lighthouse-mobile.png)
 
 #### Evidência de Teste - Desktop
-![Relatório de Teste Lighthouse Desktop](image-1.png)
+![Relatório de Teste Lighthouse Desktop](../assets/images/evidencias/lighthouse-desktop.png)
 
 ### Análise dos Indicadores:
 - **SEO (100/100):** Metadados descritivos, hierarquia estruturada de cabeçalhos (`h1`, `h2`, `h3`) e tags semânticas devidamente validadas.
