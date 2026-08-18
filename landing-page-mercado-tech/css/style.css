@@ -1,0 +1,59 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 72px;
+}
+
+.logo {
+  width: 140px;
+  height: auto;
+}
+
+.section-padding {
+  padding: 72px 0;
+}
+
+.hero-section {
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  border-radius: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.12);
+}
+
+.btn {
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 64px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .section-padding {
+    padding: 48px 0;
+  }
+
+  .hero-section {
+    min-height: auto;
+    padding: 56px 0;
+  }
+}
